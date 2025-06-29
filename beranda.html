@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        margin: 0;
+        background-color: green;
+        height: 60px;
+        padding: 10px 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul {
+        list-style: none;
+        color: white;
+        align-items: center;
+        display: flex;
+        margin: 0;
+        padding: 10px;
+        font-family: "League Spartan", sans-serif;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+
+      a:hover {
+        color: #a9a9a9;
+      }
+
+      .gambar img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        width: 800px;
+        height: auto;
+        text-align: center;
+      }
+
+      .gambar p {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 5px;
+        font-family: 'Open sans', sans-serif;
+        font-size: 14px;
+        color: gray;
+        text-align: center;
+      }
+
+        .baris-pemisah {
+  display: flex;
+  gap: 150px;
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.baris-pemisah::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.rinjani {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rinjani img {
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.rinjani h3 {
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.rinjani p {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+  color: #444;
+}
+
+    .grid-puncak {
+  display: flex;
+  gap: 150px;
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.grid-puncak::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.kolom {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.kolom img {
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.kolom h3 {
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.kolom p {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+  color: #444;
+}
+
+  .baris-ketiga {
+  display: flex;
+  gap: 150px;
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.baris-ketiga::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.sembalun {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sembalun img {
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.sembalun h3 {
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.sembalun p {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+  color: #444;
+}
+
+.baris-keempat {
+  display: flex;
+  gap: 150px;
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.baris-keempat::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.bukit {
+  width: 50%;
+  padding: 10px;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+.bukit img {
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.bukit h3 {
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.bukit p {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+  color: #444;
+}
+
+.penutup  {
+  margin-bottom: 30px;
+  margin-top: 150px;
+  font-family: 'Open sans', sans-serif;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="puncak">
+      <ul>
+        <li><a href="rinjani.html">Kembali</a></li>
+        <li><a href="Aturan.html">Aturan</a></li>
+        <li><a href="Jelajah.html">Jelajah Kawasan Rinjani</a></li>
+      </ul>
+    </nav>
+
+ <div class="gambar">
+      <img src="gambar/7 summits sembalun.jpg" alt="7 summits" />
+      <p>Gambar ilustrasi "7 Summits" dibuat untuk media pembelajaran</p>
+ <div/>
+
+<div class="baris-pemisah">    
+      <div class="rinjani"> 
+        <img src="gambar/alexis-creuzot-gPhTy2jnnW4-unsplash.jpg" alt="rinjani">
+        <h3>PUNCAK RINJANI 3.726 MDPL</h3>
+        <p>Gunung Rinjani adalah gunung berapi tertinggi kedua di Indonesia dengan ketinggian 3.726 mdpl, yang terletak di Pulau Lombok, Nusa Tenggara Barat. Gunung ini termasuk dalam daftar Seven Summits Indonesia karena menjadi titik tertinggi di wilayah Nusa Tenggara. Dikenal dengan panorama indah seperti Danau Segara Anak, Puncak Rinjani menjadi destinasi favorit pendaki sekaligus simbol kekuatan alam dan pelestarian lingkungan.</p>
+      </div>
+      <div class="rinjani">
+        <img src="gambar/Gambar WhatsApp 2025-06-22 pukul 0231_magic.jpeg" alt="sempana">
+        <h3>PUNCAK SEMPANA 2.2329 MDPL</h3>
+        <p>Bukit Sempana adalah salah satu puncak dalam jalur 7 Summits Sembalun yang terletak di kawasan Gunung Rinjani, Lombok. Meskipun tidak setinggi puncak utama, bukit ini menawarkan panorama alam yang memukau, seperti barisan bukit hijau, langit terbuka, dan jalur padang savana yang luas. Lokasinya sering dijadikan titik istirahat atau spot foto oleh para pendaki. Bukit Sempana juga memiliki nilai edukatif sebagai bagian dari pelestarian ekosistem perbukitan dan pengenalan vegetasi khas daerah pegunungan.</p>
+      </div>
+</div>
+
+<div class="grid-puncak">
+      <div class="kolom">
+        <img src="gambar/Gambar WhatsApp 2025-06-22 pukul 02.04.27_ab5ac6fb.jpg" alt="gedong">
+        <h3>PUNCAK LEMBAH GEDONG 2.200 MDPL</h3>
+        <p>Puncak Lembah Gedong adalah salah satu bukit dalam 7 Summits Sembalun kawasan ini dikelilingi vegetasi semak dan pepohonan kecil. Suasananya teduh dan tenang, cocok untuk beristirahat sejenak sebelum melanjutkan perjalanan.</p>
+      </div>
+      <div class="kolom">
+        <img src="gambar/Gambar WhatsApp 2025-06-22 pukul 03.07.39_a2b06d02.jpg" alt="sasak">
+        <h3>PUNCAK KONDO 1.937 MDPL</h3>
+        <p>Bukit Kondo adalah salah satu dari tujuh puncak dalam jalur 7 Summits Sembalun yang berada di kawasan kaki Gunung Rinjani, Lombok Timur. Bukit ini memiliki karakteristik berupa punggungan terbuka yang dikelilingi padang rumput dan vegetasi khas pegunungan. Meskipun tidak terlalu tinggi, Bukit Kondo menyuguhkan panorama alam yang luas dan menjadi titik strategis untuk menikmati matahari terbit. Lokasinya cocok sebagai tempat edukasi alam serta pengenalan medan pendakian bagi pemula.</p>
+      </div>
+</div>
+
+<div class="baris-ketiga">
+      <div class="sembalun">
+        <img src="gambar/Gambar WhatsApp 2025-06-22 pukul 133_magic.jpeg" alt="anak dara">
+        <h3>PUNCAK ANAK DARA 1.923 MDPL</h3>
+        <p>Puncak Anak Dara adalah salah satu bukit eksotis yang terletak di kawasan Sembalun, Salah satu dari 7 summits sembalun Meski jalurnya menanjak, Puncak Anak Dara menawarkan pengalaman luar biasa dalam waktu yang relatif singkat. Banyak pendaki menjadikannya tempat favorit untuk "tektok" dan hunting foto pemandangan.</p>
+      </div>
+      <div class="sembalun">
+        <img src="gambar/Gambar WhatsApp 2025-06-22 pukul 114_magic (1).jpeg" alt="pergasingan">
+        <h3>PUNCAK PERGASINGAN 1.805 MDPL</h3>
+        <p>Bukit Pergasingan adalah salah satu bukit terkenal di kawasan Sembalun, Bukit ini juga masuk dalam jajaran 7 Summits Sembalun, dan menjadi salah satu yang paling populer karena aksesnya relatif mudah serta pemandangannya yang sangat menakjubkan. Puncak Pergasingan tidak hanya menawarkan pemandangan yang indah, tetapi juga tantangan ringan yang cocok untuk semua kalangan. Banyak orang menjadikannya lokasi camping akhir pekan, bahkan spot latihan sebelum mendaki Gunung Rinjani.</p>
+      </div>
+</div>
+
+<div class="baris-keempat">
+  <div class="bukit">
+    <img src="gambar/Gambar WhatsApp 2025-06-22 pukul 23.00.27_1974a920.jpg" alt="">
+    <h3>PUNCAK BAO DAYA 1.600 MDPL</h3>
+    <p>Bukit Bao Daya merupakan salah satu bukit yang kini diakui secara resmi sebagai bagian dari jalur 7 Summits Sembalun, menggantikan posisi Bukit Bao Ritip. Terletak di kawasan perbukitan Sembalun, bukit ini menyajikan panorama terbuka yang khas, dengan jalur yang menantang. Keberadaannya memperkaya pengalaman pendakian dan menambah nilai edukatif dalam mengenal keanekaragaman lanskap Sembalun.</p>
+  </div>
+</div>
+      
+<footer class="penutup">
+  <p>Website ini dibuat untuk tujuan edukatif dan informasi umum mengenai 7 Summits Sembalun.</p>
+  <p>Konten disusun sebagai media pembelajaran oleh siswa. Tidak untuk tujuan komersial.</p>
+  <p>&copy; 2025. Semua gambar dan informasi disesuaikan dengan sumber terbuka atau dokumentasi pribadi.</p>
+</footer>
+
+  </body>
+</html>
